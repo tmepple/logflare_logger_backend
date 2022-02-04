@@ -39,7 +39,7 @@ defmodule LogflareLogger.MixProject do
       {:typed_struct, ">= 0.0.0"},
       {:bertex, "~> 1.3"},
       {:etso, "~> 0.1.2"},
-      {:logflare_api_client, "~> 0.3.2"},
+      {:logflare_api_client, git: "https://github.com/tmepple/logflare_api_client.git"},
 
       # Test and Dev
       {:placebo, "~> 2.0", only: :test},
