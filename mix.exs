@@ -39,7 +39,7 @@ defmodule LogflareLogger.MixProject do
       {:typed_struct, ">= 0.0.0"},
       {:bertex, "~> 1.3"},
       {:etso, "~> 0.1.2"},
-      {:logflare_api_client, git: "https://github.com/tmepple/logflare_api_client.git"},
+      {:logflare_api_client, "0.3.2", organization: "trivector"},
 
       # Test and Dev
       {:placebo, "~> 2.0", only: :test},
@@ -56,7 +56,8 @@ defmodule LogflareLogger.MixProject do
   defp package() do
     [
       links: %{"GitHub" => "https://github.com/Logflare/logflare_logger_backend"},
-      licenses: ["MIT"]
+      licenses: ["MIT"],
+      organization: "trivector"
     ]
   end
 end
